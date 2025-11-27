@@ -17,6 +17,10 @@ video {
   object-fit: cover;
 }
 
+a {
+  color: #ffffff;
+}
+
 .reel-page {
   height: 100vh; /* ti incuriosisce? */
   max-width: 512px;
@@ -24,6 +28,7 @@ video {
   position: relative;
 }
 
+/* Header */
 .reel-header {
   position: absolute;
   align-items: center;
@@ -31,52 +36,104 @@ video {
   top: 0;
   left: 0;
   right: 0;
-
-  /* Inserisci qui sotto 
-    le tue regole, se necessario. */
 }
 
 i.bi-play-btn {
   position: absolute;
   display: block;
   font-size: 22px;
-  left: 3%;
+  left: 5%;
   top: 25%;
 }
 
-.top-navbar {
+nav.top-navbar {
   display: flex;
   justify-content: center;
   margin: 15px 0px;
-  gap: 10px;
+  gap: 15px;
 }
 
-#explore-nav,
-#following-nav {
+a#explore-nav,
+a#following-nav {
   opacity: 50%;
 }
 
-#foryou-nav::after {
+a#foryou-nav:after {
   content: "";
   position: absolute;
   display: block;
   background-color: #ffffff;
   height: 3px;
   width: 25px;
-  transform: translateX(40%);
+  transform: translate(40%, 40%);
   border-radius: 20%;
 }
 
-.bi-search {
+i.bi-search {
   position: absolute;
   display: block;
   font-size: 22px;
-  right: 3%;
+  right: 5%;
   top: 25%;
 }
 
-/* Footer */
+/* Sidebar */
+.sidebar {
+  padding: 0 16px;
+  position: absolute;
+  right: 0;
+  top: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
 
+.sidebar i {
+  font-size: 26px;
+}
+
+.sidebar p {
+  font-size: 14px;
+}
+
+.sidebar > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+div#logo-side {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+div#logo-side > img {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  border: 2px solid #ffffff;
+}
+
+i.bi-plus {
+  position: absolute;
+  font-size: 24px;
+  border-radius: 100%;
+  background-color: #e63333;
+  height: 23px;
+  width: 23px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: -10px;
+  right: 12px;
+}
+
+/* Footer */
 footer {
   position: absolute;
   left: 0;
@@ -88,34 +145,12 @@ footer {
     le tue regole, se necessario. */
 }
 
-/* Sidebar */
-.sidebar {
-  padding: 0 16px;
-  position: absolute;
-  right: 0;
-  top: 40%;
-
-  /* Inserisci qui sotto 
-    le tue regole, se necessario. */
-}
-
 /* ---------------------
 Regole per evidenziare i blocchi 
 da rimuovere una volta concluso
 --------------------- */
 .debug footer {
   min-height: 100px;
-  border: 2px dashed #fff;
-}
-
-.debug .sidebar {
-  min-width: 80px;
-  min-height: 450px;
-  border: 2px dashed #ff0;
-}
-
-.debug .reel-header {
-  min-height: 50px;
   border: 2px dashed #fff;
 }
 /* --------------------- */
