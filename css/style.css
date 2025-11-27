@@ -145,7 +145,7 @@ footer {
   display: flex;
   gap: 80px;
   justify-content: center;
-  padding: 10px;
+  padding: 20px 10px;
 }
 
 footer > div {
@@ -168,9 +168,9 @@ footer p {
   display: block;
   background-color: #ffffff;
   height: 40px;
-  width: 60px;
+  width: 50px;
   transform: translate(-30%,15%);
   border-radius: 20%;
-  box-shadow: 4px 0px #d617d6;
-  border-left: 4px solid #d617d6;
+  border-right: 4px solid #d617d6;
+  border-left: 4px solid #00ffff;
 }
