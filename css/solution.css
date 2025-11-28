@@ -1,0 +1,157 @@
+a {
+  color: #ffffff;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* Header */
+.reel-header {
+  display: flex;
+  padding: 15px;
+}
+
+i.bi-play-btn {
+  font-size: 22px;
+}
+
+nav.top-navbar ul {
+  display: flex;
+  justify-content: center;
+  margin: 15px 0px;
+  gap: 15px;
+}
+
+a.header-link {
+  opacity: 50%;
+}
+
+#foryou-nav {
+  opacity: 100%;
+}
+
+a#foryou-nav:after {
+  content: "";
+  position: absolute;
+  display: block;
+  background-color: #ffffff;
+  height: 3px;
+  width: 25px;
+  transform: translate(40%, 40%);
+  border-radius: 20%;
+}
+
+i.bi-search {
+  font-size: 22px;
+}
+
+/* Sidebar */
+section.reel-sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 24px;
+}
+
+section.reel-sidebar > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section.reel-sidebar i {
+  font-size: 30px;
+}
+
+section.reel-sidebar p {
+  font-size: 14px;
+}
+
+div#logo-side {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+div#logo-side > img {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  border: 2px solid #ffffff;
+}
+
+i.bi-plus {
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  translate: 50% 50%;
+
+  width: 22px;
+  height: 22px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 100%;
+  background-color: #e63333;
+
+}
+
+/* Infos */
+.reel-infos {
+  position: absolute;
+  bottom: 100px;
+  left: 0;
+  padding: 16px;
+  color: #ffffff;
+  max-width: 70%;
+}
+
+/* Footer */
+footer.reel-footer {
+  min-height: 100px;
+  background-color: #000000;
+  display: flex;
+  gap: 80px;
+  justify-content: center;
+  padding: 20px 10px;
+}
+
+.reel-infos {
+  max-width: 70%;
+}
+
+.reel-author {
+  font-weight: 600;
+}
+
+footer.reel-footer > section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer.reel-footer i {
+  font-size: 30px;
+}
+
+footer.reel-footer p {
+  font-size: 11px;
+}
+
+#plus-footer::after {
+  content: "";
+  position: absolute;
+  display: block;
+  background-color: #ffffff;
+  height: 40px;
+  width: 50px;
+  transform: translate(-30%,15%);
+  border-radius: 20%;
+  border-right: 4px solid #d617d6;
+  border-left: 4px solid #00ffff;
+}

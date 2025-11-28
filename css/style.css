@@ -17,10 +17,6 @@ video {
   object-fit: cover;
 }
 
-a {
-  color: #ffffff;
-}
-
 .reel-page {
   height: 100vh; /* ti incuriosisce? */
   max-width: 512px;
@@ -38,139 +34,19 @@ a {
   right: 0;
 }
 
-i.bi-play-btn {
-  position: absolute;
-  display: block;
-  font-size: 22px;
-  left: 5%;
-  top: 25%;
-}
-
-nav.top-navbar {
-  display: flex;
-  justify-content: center;
-  margin: 15px 0px;
-  gap: 15px;
-}
-
-a#explore-nav,
-a#following-nav {
-  opacity: 50%;
-}
-
-a#foryou-nav:after {
-  content: "";
-  position: absolute;
-  display: block;
-  background-color: #ffffff;
-  height: 3px;
-  width: 25px;
-  transform: translate(40%, 40%);
-  border-radius: 20%;
-}
-
-i.bi-search {
-  position: absolute;
-  display: block;
-  font-size: 22px;
-  right: 5%;
-  top: 25%;
-}
-
 /* Sidebar */
-.sidebar {
+.reel-sidebar {
   padding: 0 16px;
   position: absolute;
   right: 0;
   top: 40%;
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-  justify-content: center;
-}
-
-.sidebar > div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.sidebar i {
-  font-size: 30px;
-}
-
-.sidebar p {
-  font-size: 14px;
-}
-
-div#logo-side {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-div#logo-side > img {
-  display: block;
-  width: 50px;
-  height: 50px;
-  border-radius: 100%;
-  border: 2px solid #ffffff;
-}
-
-i.bi-plus {
-  position: absolute;
-  font-size: 24px;
-  border-radius: 100%;
-  background-color: #e63333;
-  height: 23px;
-  width: 23px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  bottom: -10px;
-  right: 12px;
 }
 
 /* Footer */
-footer {
+.reel-footer {
   position: absolute;
   left: 0;
   right: 0;
   bottom: 0;
   color: #ffffff;
-
-  min-height: 100px;
-  background-color: #000000;
-  display: flex;
-  gap: 80px;
-  justify-content: center;
-  padding: 20px 10px;
-}
-
-footer > div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-footer i {
-  font-size: 30px;
-}
-
-footer p {
-  font-size: 11px;
-}
-
-#plus-footer::after {
-  content: "";
-  position: absolute;
-  display: block;
-  background-color: #ffffff;
-  height: 40px;
-  width: 50px;
-  transform: translate(-30%,15%);
-  border-radius: 20%;
-  border-right: 4px solid #d617d6;
-  border-left: 4px solid #00ffff;
 }

@@ -20,6 +20,7 @@
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/solution.css" />
   </head>
   <body>
     <!-- Container della pagina, necessario per via del layout particolare -->
@@ -28,46 +29,69 @@
 
       <!-- Header -->
       <header class="reel-header">
-        <i class="bi bi-play-btn"></i>
+        <div>
+          <i class="bi bi-play-btn"></i>
+        </div>
+
         <nav class="top-navbar">
-          <a id="explore-nav">Esplora</a>
-          <a id="following-nav">Seguiti</a>
-          <a id="foryou-nav"><b>Per te</b></a>
+          <ul>
+            <li>
+              <a class="header-link" id="explore-nav">Esplora</a>
+            </li>
+            <li>
+              <a class="header-link" id="following-nav">Seguiti</a>
+            </li>
+            <li>
+              <a class="header-link" id="foryou-nav"><b>Per te</b></a>
+            </li>
+          </ul>
         </nav>
-        <i class="bi bi-search"></i>
+
+        <div>
+          <i class="bi bi-search"></i>
+        </div>
       </header>
 
-      <!-- Sidebar -->
-      <div class="sidebar">
-        <!-- Logo -->
-        <div id="logo-side">
-          <img src="assets/img/boolean_logo.png" alt="boolean_logo" />
-          <i class="bi bi-plus"></i>
-        </div>
-        <!-- Likes -->
-        <div id="likes-side">
-          <i class="bi bi-heart-fill"></i>
-          <p>588</p>
-        </div>
-        <!-- Comments -->
-        <div id="comments-side">
-          <i class="bi bi-chat-dots-fill"></i>
-          <p>13</p>
-        </div>
-        <!-- Favorites -->
-        <div id="favorites-side">
-          <i class="bi bi-bookmark-fill"></i>
-          <p>638</p>
-        </div>
-        <!-- Shares -->
-        <div id="shares-side">
-          <i class="bi bi-arrow-up-right-square-fill"></i>
-          <p>491</p>
-        </div>
-      </div>
+      <!-- Main -->
+      <main>
+        <section class="reel-sidebar">
+          <!-- Logo -->
+          <div id="logo-side">
+            <img src="assets/img/boolean_logo.png" alt="boolean_logo" />
+            <i class="bi bi-plus"></i>
+          </div>
+          <!-- Likes -->
+          <div id="likes-side">
+            <i class="bi bi-heart-fill"></i>
+            <p>588</p>
+          </div>
+          <!-- Comments -->
+          <div id="comments-side">
+            <i class="bi bi-chat-dots-fill"></i>
+            <p>13</p>
+          </div>
+          <!-- Favorites -->
+          <div id="favorites-side">
+            <i class="bi bi-bookmark-fill"></i>
+            <p>638</p>
+          </div>
+          <!-- Shares -->
+          <div id="shares-side">
+            <i class="bi bi-arrow-up-right-square-fill"></i>
+            <p>491</p>
+          </div>
+        </section>
+
+        <section class="reel-infos">
+          <div class="reel-author">boolean.careers</div>
+          <div class="reel-description">
+            Prova il Foundamentals Camp. 20 ore di corso gratuito per... <b>Vedi altro</b>
+          </div>
+        </section>
+      </main>
 
       <!-- Footer -->
-      <footer>
+      <footer class="reel-footer">
         <div>
           <i class="bi bi-house-fill"></i>
           <p>Home</p>
@@ -85,7 +109,7 @@
         </div>
         <div>
           <i class="bi bi-person"></i>
-          <P>Profilo</P>
+          <p>Profilo</p>
         </div>
       </footer>
     </div>
